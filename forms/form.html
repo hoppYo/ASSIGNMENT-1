@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALTSCHOOL Application</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="main">
+    <nav class="navbar">
+        <a href="./form.html" class="barB">refresh</a>
+        <a href="../index.html" class="bar">Home</a>
+        <a href="../table/table.html" class="bar">Table Page</a>
+        <a href="../media/media.html" class="bar">Media Page</a>
+    </nav>
+    <div class="formT">
+        <div class="topS">
+    <span class="top-Text">Already an Altschooler? <a href="https://learn.altschoolafrica.com/">Sign in!</a></span>
+        </div>
+    <h1 class="top-Text">SignUp</h1>
+    <span class="top-Text" >Take the next steps to apply at AltSchool Africa</span>
+    
+   <form>
+    <!-- using table to structure the Forms -->
+    <table>
+        <tr>
+            <td>
+                <label for="first name">First Name</label>
+            </td>
+            <td>
+                <label for="last name">Last Name</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" id="first name" placeholder="Enter First Name" required/>
+            </td>
+            <td>
+                <input type="text" id="last name" placeholder="Enter Last Name" required/>
+            </td>
+        </tr>
+
+        <!-- gender and birthdate -->
+        <tr>
+            <td>
+                <label for="gender">Gender</label>
+            </td>
+            <td>
+                <label for="date of birth">Date of Birth</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select id="gender" name="gender">
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </td>
+            <td>
+                <input type="date" id="birthdate" />
+            </td>
+        </tr>
+
+        <!-- email and phone number -->
+        <tr>
+            <td>
+                <label for="email">Email Address</label>
+            </td>
+            <td>
+                <label for="phone">Phone Number</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="email" id="email" name="email" placeholder="Enter email" required/>
+            </td>
+           <td>
+            <input type="tel" id="phone" name="phone" placeholder="000 0000 0000" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required/>
+           </td>
+        </tr>
+
+        <!-- country and state/city of residence -->
+        <tr>
+            <td>
+                <label for="country">Country</label>
+            </td>
+            <td>
+                <label for="residence">State/City of residence</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select id="country" name="country">
+                    <option value="">Select your country</option>
+                    <option value="NGN">Nigeria</option>
+                    <option value="US">United States</option>
+                    <option value="CA">Canada</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="AU">Australia</option>
+                    <option value="IN">India</option>
+                    <option value="CN">China</option>
+                </select>
+            </td>
+            <td>
+                <input type="text"  placeholder="Enter state of residence" required/>
+            </td>
+
+                <!-- how did you hear about us -->
+            <tr>
+                <td>
+                    <label for="how did you hear about us?">How did you hear about us?</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <select id="social media" name="social media">
+                        <option value="">select</option>
+                        <option value="Twitter">Twitter</option>
+                        <option value="Facebook">Facebook</option>
+                        <option value="Linkedin">Linkedin</option>
+                        <option value="Youtube">Youtube</option>
+                        <option value="Friend">Friend</option>
+                        <option value="WhatsApp">WhatsApp</option>
+                        <option value="Instagram">Instagram</option>
+                        <option value="Billboard">Billboard</option>
+                        <option value="Sales officer">Sales officer</option>
+                        <option value="Other">Other</option>
+                </td>
+            </tr>
+
+            <!-- password and confirm password -->
+            <tr>
+                <td>
+                    <label for="password">Password</label>
+                </td>
+                <td>
+                    <label for="confirm password">Confirm password</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" id="password" name="password" placeholder="Enter password" required/>
+                </td>
+                <td>
+                    <input type="password" id="password" name="password" placeholder="Confirm password" required/>
+                </td>
+            </tr>
+        </tr>
+    </table>
+
+        <!-- the concluding paragraphy -->
+    <p class="top-Text">By clicking continue, I agree to  <a href="">Terms of Use</a> and acknowledge that I
+        have read the <a href=""> Privacy Policy</a>.</p>
+   </form>
+
+        <!-- submit button -->
+   <form action="/submit-form" method="POST">
+
+    <input class="button" type="submit" value="Submit">
+</form>
+    </div>
+
+   <!-- image -->
+    <figure>
+    <img class="Logo"
+    width="450px"
+    src="../assets/images/altschFormLogo.jpeg"
+    srcset="../assets/images/altschFormLogo320.jpeg,
+            ../assets/images/altschFormLogo600.jpeg,
+            ../assets/images/altschFormLogo1200.jpeg"
+    sizes="(max-width: 1200px) 100vw"
+    alt="altschFormLogo">
+
+    <p class="formP">Learn highly sought <br>
+        after skills without <br>
+             hassle.</p>
+             <section class="logoContainer">
+                <div class="logos">
+                    <img src="../assets/images/twitterLogo.jpeg"
+                    width="35px" alt="Twitter">
+                    <img src="../assets/images/instaLogo.jpeg" width="20px" alt="Instagram">
+                    <img src="../assets/images/facebookLogo.jpeg" width="32px" alt="Facebook">
+                    <img src="../assets/images/linkedinLogo.jpeg" width="23px" alt="Linkedin">
+             </section>
+    </figure>
+</div>
+
+<footer class="info">
+<div class="h4">
+<p class="h4">Tel: 0800ALTSCHOOL</p>
+</div>
+<div>
+    <h5 class="h5">©2024 AltSchool Africa. All rights reserved</h5>
+</div>
+</footer>
+
+        
+</body>
+</html>

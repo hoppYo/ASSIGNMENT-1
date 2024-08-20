@@ -1,0 +1,156 @@
+body {
+    background-color: black;
+    color:white;
+}
+
+.navbar, .bar {
+    background-color: gray;
+    margin: 0px;
+    height: 55px;
+    width: 700x;
+}
+.bar {
+    margin: 30px;
+    margin-right: 10px;
+    display: flexbox;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+.bar:hover {
+    background-color: white;
+}
+.barB {
+    margin: 0px;
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    float: right;
+}
+
+
+.fragments {
+    margin: 0;
+    padding-top: 15px;
+    border: 2px solid orangered;
+    display: grid;
+    float:right;
+    width: 115px;
+    height: 250px;
+    background-color: orangered;
+}
+.list {
+    color: aliceblue;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Logo {
+    background-color:antiquewhite;
+    display: flexbox;
+    justify-content: left;
+    align-items: baseline;
+}
+.formT {
+    display: flexbox;
+    justify-content: right;
+    float: right;
+
+
+}
+.main, .top-Text {
+    background-color:aliceblue;
+    color: black;
+}
+.formP {
+    color: black;
+    font-size: 50px;
+    font-weight: bolder;
+    font-style: oblique;
+    display: flex;
+    text-align: center;
+}
+.topS{
+    float: right;
+    font-weight: bolder;
+}
+.submit {
+    background-color: rgb(95, 43, 226);
+    color: white;
+}
+.logos {
+    display: flex;
+    justify-content: left;
+    gap: 5px;
+}
+.logoContainer {
+    margin: 0px;
+    margin-left: 138px;
+    align-items: center;
+}
+
+.info {
+    margin-left: 140px;
+}
+.h4 {
+margin-left: 30px;
+font-size: 10px;
+color: black;
+}
+.h5 {
+    margin-left: 0px;
+}
+.button {
+    background-color: rgb(95, 43, 226);
+    border-radius: 5px;
+    color: white;
+    width: 400px;
+    height: 40px;
+}
+.button:hover {
+    background-color:gray;
+    color: bisque;
+}
+.scroll {
+    font-style: italic;
+    font-weight: 80px;
+    text-decoration: none;
+    color: brown;
+}
+figcaption {
+    color: greenyellow;
+}
+strong, h1, h2, h3 {
+    color: darkgoldenrod;
+}
+#altschool-ID, #Biography, #Reason, #Goals, #About-Me, .table-content , p, span{
+    color: burlywood;
+}
+.alt {
+    margin-right: 150px;
+    float: right;
+    display: grid;
+    justify-items: center;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.alt {
+    width: 100px;
+    height: 100px;
+    animation-name: slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
